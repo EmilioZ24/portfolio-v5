@@ -1,6 +1,11 @@
-.body{
-    background-color: #F8F8F6;
+.background-image {
+  background-color: #FDF5E6; /* Set background color to a light beige */
+  background-image: 
+    linear-gradient(45deg, transparent 12%, rgba(0, 0, 0, 0.1) 12.5%, rgba(0, 0, 0, 0.1) 15%, transparent 15.5%, transparent 52%, rgba(0, 0, 0, 0.1) 52.5%, rgba(0, 0, 0, 0.1) 55%, transparent 55.5%, transparent 92%, rgba(0, 0, 0, 0.1) 92.5%, rgba(0, 0, 0, 0.1) 95%, transparent 95.5%), 
+    linear-gradient(45deg, rgba(0, 0, 0, 0.1) 12%, transparent 12.5%, transparent 15%, rgba(0, 0, 0, 0.1) 15.5%, rgba(0, 0, 0, 0.1) 52%, transparent 52.5%, transparent 55%, rgba(0, 0, 0, 0.1) 55.5%, rgba(0, 0, 0, 0.1) 92%, transparent 92.5%, transparent 95%, rgba(0, 0, 0, 0.1) 95.5%);
+  background-size: 20px 20px; /* Set the size of the pattern */
 }
+This code create
 
 .navbar-custom {
 background-color: #F1E9D7;
