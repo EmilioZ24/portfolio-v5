@@ -5,10 +5,22 @@
     linear-gradient(45deg, rgba(0, 0, 0, 0.1) 12%, transparent 12.5%, transparent 15%, rgba(0, 0, 0, 0.1) 15.5%, rgba(0, 0, 0, 0.1) 52%, transparent 52.5%, transparent 55%, rgba(0, 0, 0, 0.1) 55.5%, rgba(0, 0, 0, 0.1) 92%, transparent 92.5%, transparent 95%, rgba(0, 0, 0, 0.1) 95.5%);
   background-size: 20px 20px; /* Set the size of the pattern */
 }
-This code create
+
 
 .navbar-custom {
 background-color: #F1E9D7;
+}
+
+.metallic-green {
+  background-color: #4CFF00; /* Metallic Green Hex Code */
+  /*border-radius: 10px;  Optional: Add border-radius for rounded corners *
+  padding: 20px;  Optional: Add padding for spacing inside the element *
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Optional: Add a subtle box shadow for depth
+  color: #fff; Optional: Set text color to white for better contrast */
+}
+
+.metallic-green p {
+  margin: 0; /* Remove default paragraph margin for better alignment */
 }
 
 .gradient {
