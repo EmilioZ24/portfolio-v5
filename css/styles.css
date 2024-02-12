@@ -23,7 +23,7 @@ background-color: #F1E9D7;
   margin: 0;  Remove default paragraph margin for better alignment *
 }*/
 
-  .metallic>span{
+  p>span{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -38,16 +38,16 @@ background-color: #F1E9D7;
     letter-spacing: 5px;
     background: linear-gradient(#262626,#eaeaea,#262626);
     -webkit-background-clip: text;
-    color:#6CA67C ;
+    color:transparent ;
     font-weight: 700;
   }
 
-  .metallic>span:nth-child(1)
+  p>span:nth-child(1)
   {
     z-index: 2;   
   }
 
-  .metallic>span:nth-child(2)
+  p>span:nth-child(2)
   {
    z-index:1;
    box-shadow:1px 1px 0 #262626 , 2px 2px 0 #262626, 3px 3px 0 #262626, 4px 4px 0 #262626, 5px 5px 0 #262626, 1px 1px 0 #262626, 6px 20px 20px rgba(0,0,0,1), -1px -1px 0 #fff;
