@@ -11,81 +11,48 @@
 background-color: #F1E9D7;
 }
 
-.metallic-green {
-  background-color: #4CFF00; /* Metallic Green Hex Code */
+/*.metallic-green {
+  background-color: #4CFF00;  Metallic Green Hex Code 
   /*border-radius: 10px;  Optional: Add border-radius for rounded corners *
   padding: 20px;  Optional: Add padding for spacing inside the element *
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Optional: Add a subtle box shadow for depth
-  color: #fff; Optional: Set text color to white for better contrast */
+  color: #fff; Optional: Set text color to white for better contrast *
 }
 
 .metallic-green p {
-  margin: 0; /* Remove default paragraph margin for better alignment */
-}
+  margin: 0;  Remove default paragraph margin for better alignment *
+}*/
 
-.gradient {
-    position: relative;
-    min-height: 200px;
-    background-image: linear-gradient(
-      to right,
-      #E1F4CB,
-      #BACBA9
-    );
-    z-index: 1;
-  }
-  
-  .gradient::before {
+  .metallic>span{
     position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(
-      to bottom,
-      #E1F4CB,
-      #3B443A
-    );
-    z-index: -1;
-    transition: opacity 0.5s linear;
-    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(#262626,#eaeaea,#262626);
+    -webkit-background-clip: text;
+    color:#6CA67C ;
+    font-weight: 700;
   }
-  .gradient:hover::before {
-    opacity: 1;
+
+  .metallic>span:nth-child(1)
+  {
+    z-index: 2;   
   }
-  
-  .gradient-1 {
-    position: relative;
-    min-height: 200px;
-    background-image: linear-gradient(
-      to right,
-      hsl(267, 78%, 29%),
-      hsl(345, 79%, 42%)
-    );
-    z-index: 1;
+
+  .metallic>span:nth-child(2)
+  {
+   z-index:1;
+   box-shadow:1px 1px 0 #262626 , 2px 2px 0 #262626, 3px 3px 0 #262626, 4px 4px 0 #262626, 5px 5px 0 #262626, 1px 1px 0 #262626, 6px 20px 20px rgba(0,0,0,1), -1px -1px 0 #fff;
   }
-  
-  .gradient-1::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(
-      to bottom,
-      hsl(31, 100%, 40%),
-      hsl(344, 100%, 50%)
-    );
-    z-index: -1;
-    transition: opacity 0.5s linear;
-    opacity: 0;
-  }
-  
-  .gradient-1:hover::before {
-    opacity: 1;
-  }
-  
+
   .hometext{
   font-size: 100px;
   font-style: normal;
@@ -98,12 +65,12 @@ background-color: #F1E9D7;
   }
   
   .btn-circle.btn-xl {
-    background-color:hsl(344, 100%, 50%);
+    background-color: #F1E9D7;
       width: 100px;
       height: 100px;
       padding: 13px 18px;
       border-radius: 60px;
-    border-color: hsl(267, 78%, 29%);
+   /*border-color: hsl(267, 78%, 29%);*/
       font-size: 15px;
       text-align: center;
     transition: width 2s, height 4s;
@@ -112,8 +79,8 @@ background-color: #F1E9D7;
   .btn-circle.btn-xl:hover {
     width: 250px;
     height: 250px;
-    background-color:  hsl(267, 78%, 29%);
-    border-color:hsl(344, 100%, 50%);
+    background-color: #F1E9D7;
+    /*border-color:hsl(344, 100%, 50%);*/
     font-size: 30px;
   }
   
