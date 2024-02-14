@@ -65,12 +65,12 @@ background-color: #F1E9D7;
   }
   
   .btn-circle.btn-xl {
-    background-color: #F1E9D7;
+  
       width: 100px;
       height: 100px;
       padding: 13px 18px;
       border-radius: 60px;
-   /*border-color: hsl(267, 78%, 29%);*/
+    
       font-size: 15px;
       text-align: center;
     transition: width 2s, height 4s;
@@ -79,8 +79,7 @@ background-color: #F1E9D7;
   .btn-circle.btn-xl:hover {
     width: 250px;
     height: 250px;
-    background-color: #F1E9D7;
-    /*border-color:hsl(344, 100%, 50%);*/
+
     font-size: 30px;
   }
   
