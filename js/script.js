@@ -27,6 +27,14 @@ create=(number,color)=>{
 }
 
 rule=(particles1, particles2, g)=>{
+  for(let i =0; i < partcicles1.length; i++){
+    fx= 0
+    fy= 0
+    for(let j=0; j < particles2.length; j++){
+      a=partcicles1[i]
+      b=particles2[j]
+    }
+  }
   
 }
 
