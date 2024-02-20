@@ -1,8 +1,8 @@
 
-var x = document.getElementById("about");
+/*var x = document.getElementById("about");
 x.addEventListener("mouseover", myFunction);
-x.addEventListener("mouseout", mySecFunction);
-m=document.getElementById("life").getContext("2d")
+x.addEventListener("mouseout", mySecFunction);*/
+m = document.getElementById("life").getContext('2d')
 /* function myFunction() {
   document.getElementById("").innerHTML += ;
 }*/
@@ -27,24 +27,35 @@ create=(number,color)=>{
 }
 
 rule=(particles1, particles2, g)=>{
-  for(let i =0; i < partcicles1.length; i++){
+  for(let i =0; i < particles1.length; i++){
     fx= 0
     fy= 0
     for(let j=0; j < particles2.length; j++){
       a=partcicles1[i]
       b=particles2[j]
+      dx = a.x-b.x
+      dy = a.y-b.y
+      d=Math.sqrt(dx*dx + dy*dy)
+      if(d > 0){
+        F=g*1/d
+        fx += (F*dx)
+        fy += (F*dy)
+      }
     }
+    a.vx = (a.vx + fx)
+    a.vy = (a.vy + fy)
+    a.x += a.vx
+    a.y += a.vy
   }
-  
 }
 
-yellow = create(2,"yellow")
+yellow = create(4,"yellow")
 
 update=()=>{
   rule(yellow, yellow, -1)
-  m.clearRect(0,0,500,500)
+  m.clearRect(0, 0, 500, 500)
   draw(0,0,"black",500)
-  for(1=0;i<particles.length; i++){
+  for(i=0;i<particles.length; i++){
     draw(particles[i].x, particles[i].y,
       particles[i].color, 5)
   }

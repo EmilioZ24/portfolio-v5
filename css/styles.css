@@ -1,3 +1,9 @@
+
+.body{
+  width: "500";
+  height: "500";
+}
+
 .background-image {
   background-color: #FDF5E6; /* Set background color to a light beige */
   background-image: 
