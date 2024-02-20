@@ -36,8 +36,8 @@ rule=(particles1, particles2, g)=>{
       dx = a.x-b.x
       dy = a.y-b.y
       d=Math.sqrt(dx*dx + dy*dy)
-      if(d > 0){
-        F=g*1/d
+      if(d > 0 && d<80){
+        F = g *1/d
         fx += (F*dx)
         fy += (F*dy)
       }
@@ -46,10 +46,12 @@ rule=(particles1, particles2, g)=>{
     a.vy = (a.vy + fy)
     a.x += a.vx
     a.y += a.vy
+    if(a.x <= 0 || a.x >= 500){a.vx *=-1}
+    if(a.y <= 0 || a.y >= 500){a.vy *=-1}
   }
 }
 
-yellow = create(4,"yellow")
+yellow = create(30,"yellow")
 
 update=()=>{
   rule(yellow, yellow, -1)
